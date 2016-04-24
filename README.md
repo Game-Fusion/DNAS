@@ -6,5 +6,4 @@ The authentication might be implemented but if it is, it's a necessary evil, as 
 
 # DNAS Plans
 - "<user> is online" - notifying you when another player is online!
-- hi
-- hi
+- An Xbox Home button style system - press a designated key and it'll open up the Network Centre!
