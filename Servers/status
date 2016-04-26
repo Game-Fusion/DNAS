@@ -13,8 +13,7 @@ else print("Current Status: Shut Down")
 end
  
 --on the GS2, do this: modem.transmit(30000,30000,{sType = "requestStatus"})
- 
---rednet.open("top")
+
 local modem = peripheral.find("modem")
 modem.open(30000)
  
