@@ -1,18 +1,22 @@
 -- DNAS Status and Connection Server
--- By Mr_Iron2 but nearly all code by Gonow32
--- DNAS is (C) 2015/2016 Game Fusion
+-- By Mr_Iron2 but modem code by Gonow32
+-- DNAS is (C) 2015 Game Fusion
 
 term.clear()
 term.setCursorPos(1,1)
 print("DNAS Server")
+
 local DNAS = true
  
 if DNAS == true then
-print("Current Status: Online")
-else print("Current Status: Shut Down")
+ print("Current Status: Online")
+elseif DNAS == false then
+ print("Current Status: Shut Down")
+else
+ print("Current Status: Unavailable")
 end
  
---on the GS2, do this: modem.transmit(30000,30000,{sType = "requestStatus"})
+-- on the GS2, do this: modem.transmit(30000,30000,{sType = "requestStatus"})
 
 local modem = peripheral.find("modem")
 modem.open(30000)
